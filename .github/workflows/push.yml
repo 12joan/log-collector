@@ -15,9 +15,8 @@ jobs:
       continue-on-error: true
 
     - run: docker compose up -d --build
-
+    - run: sleep 3
     - run: docker compose exec -T web curl -f -LI http://localhost:3000/healthcheck
-
     - run: docker compose down
 
   deploy_production:
