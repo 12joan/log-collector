@@ -1,4 +1,4 @@
-FROM ruby:3.1.6-alpine
+FROM ruby:3.1.7-alpine
 
 RUN apk add --update --no-cache bash curl
 
