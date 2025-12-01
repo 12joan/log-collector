@@ -13,7 +13,7 @@ GEM
       rack-protection (= 2.2.4)
       tilt (~> 2.0)
     tilt (2.6.1)
-    webrick (1.9.1)
+    webrick (1.9.2)
 
 PLATFORMS
   x86_64-linux-musl
