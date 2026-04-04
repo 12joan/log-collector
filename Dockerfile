@@ -8,6 +8,7 @@ RUN bundle install
 COPY . .
 
 EXPOSE 3000
+ENV APP_ENV=production
 CMD ["/usr/local/bin/bundle", "exec", "rackup", "--host=0.0.0.0", "--port=3000"]
 HEALTHCHECK --start-period=1s --start-interval=1s \
   CMD curl -f http://localhost:3000/healthcheck || exit 1
