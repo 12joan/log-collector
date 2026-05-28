@@ -1,4 +1,4 @@
-FROM ruby:4.0.4-alpine
+FROM ruby:4.0.5-alpine
 
 RUN apk add build-base curl
 RUN bundle config --global frozen 1
